@@ -1,0 +1,121 @@
+# ------------------------------
+# Activity 1: Setting Up and Basic Commands
+# ------------------------------
+
+# Add all files to the staging area
+git add .
+
+# Commit the staged files with a message
+git commit -m "Initial"
+
+# Add the remote repository
+git remote add origin http://your-repo-link.git
+
+# Verify the remote repository
+git remote -v
+
+# Push the code to the main branch on the remote repository
+git push -u origin main
+
+
+# ------------------------------
+# Activity 2: Creating and Managing Branches - Merge
+# ------------------------------
+
+# Create a new branch
+git branch feature-branch
+
+# Switch to the new branch
+git checkout feature-branch
+
+# Check the current branch
+git branch -v
+
+# Stage changes
+git add .
+
+# Commit changes
+git commit -m "Initial"
+
+# Switch back to the main branch
+git checkout main
+
+# Merge the feature branch into main
+git merge feature-branch
+
+# Push the merged code to GitHub
+git push
+
+
+# ------------------------------
+# Activity 3: Creating and Managing Branches - Stash
+# ------------------------------
+
+# Create a new branch
+git branch feature-branch
+
+# Switch to the new branch
+git checkout feature-branch
+
+# Check the current branch
+git branch -v
+
+# Stage changes
+git add .
+
+# Stash changes instead of committing
+git stash
+
+# Switch back to main branch
+git checkout main
+
+# Apply the stashed changes
+git stash apply
+
+
+# ------------------------------
+# Activity 4: Collaboration and Remote Repositories
+# ------------------------------
+
+# Clone a remote repository
+git clone http://your-repo-link.git
+
+# Merge a feature branch with no fast-forward and a message
+git merge feature-branch --no-ff -m "Merge"
+
+# Rebase your current branch with the main branch from origin
+git rebase origin/main
+
+# Fetch latest commits from the remote repository
+git fetch
+
+
+# ------------------------------
+# Activity 5: Git Tags and Releases
+# ------------------------------
+
+# Create a tag for version 1.0
+git tag v1.0
+
+# Checkout to a feature branch
+git checkout feature-branch
+
+
+# ------------------------------
+# Activity 6: Advanced Git Operations
+# ------------------------------
+
+# Stage all changes
+git add .
+
+# Commit with a descriptive message
+git commit -m "Feature"
+
+# View the commit history in one line per commit
+git log --oneline
+
+# Switch to the main branch
+git checkout main
+
+# Cherry-pick a specific commit from another branch
+git cherry-pick <commit-id>  # Replace <commit-id> with actual commit hash

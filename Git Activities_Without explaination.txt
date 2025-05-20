@@ -1,0 +1,42 @@
+# Activity 1: Setting Up and Basic Commands
+git add .
+git commit -m "Initial"
+git remote add origin http://your-repo-link.git
+git remote -v
+git push -u origin main
+
+# Activity 2: Creating and Managing Branches - Merge
+git branch feature-branch
+git checkout feature-branch
+git branch -v
+git add .
+git commit -m "Initial"
+git checkout main
+git merge feature-branch
+git push
+
+# Activity 3: Creating and Managing Branches - Stash
+git branch feature-branch
+git checkout feature-branch
+git branch -v
+git add .
+git stash
+git checkout main
+git stash apply
+
+# Activity 4: Collaboration and Remote Repositories
+git clone http://your-repo-link.git
+git merge feature-branch --no-ff -m "Merge"
+git rebase origin/main
+git fetch
+
+# Activity 5: Git Tags and Releases
+git tag v1.0
+git checkout feature-branch
+
+# Activity 6: Advanced Git Operations
+git add .
+git commit -m "Feature"
+git log --oneline
+git checkout main
+git cherry-pick <commit-id>
